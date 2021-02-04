@@ -4,6 +4,7 @@ import SidebarTemplate from 'templates/SidebarTemplate';
 import Form from 'components/organisms/Form/Form';
 import Input from 'components/atoms/Input/Input';
 import Button from 'components/atoms/Button/Button';
+import Heading from 'components/atoms/Heading/Heading';
 
 const Address = () => {
   const { addAddress } = useAddress();
@@ -62,7 +63,7 @@ const Address = () => {
           value={city}
           onChange={(e) => getCity(e.target.value)}
         />
-
+        <Heading medium>Free delivery!!!</Heading>
         <Button as="button" type="submit" onClick={handleSubmit}>
           Go to payment
         </Button>

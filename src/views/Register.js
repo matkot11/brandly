@@ -59,7 +59,7 @@ const Register = () => {
         </Button>
         <Heading small>
           Have already an account?
-          <StyledLink to={routes.login}>Click here to login.</StyledLink>
+          <StyledLink to={routes.login}> Click here to login.</StyledLink>
         </Heading>
       </Form>
     </NavbarTemplate>
