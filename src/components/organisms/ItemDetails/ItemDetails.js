@@ -12,6 +12,10 @@ import Paragraph from 'components/atoms/Paragraph/Paragraph';
 const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
+
+  & > * {
+    margin: 0 20px;
+  }
 `;
 
 const StyledInnerWrapper = styled.div`

@@ -6,9 +6,10 @@ import Card from 'components/molecules/Card/Card';
 import Heading from 'components/atoms/Heading/Heading';
 
 const StyledWrapper = styled.div`
+  justify-self: center;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center; 
 
   & > * {
     margin: 30px;
@@ -24,19 +25,19 @@ const Items = () => {
 
   return (
     <StyledWrapper key={location.key}>
-      {data ? (
-        data.map((item) => (
-          <Card
-            key={item.id}
-            id={item.id}
-            image={item.image}
-            name={item.title}
-            price={item.price}
-          />
-        ))
-      ) : (
-        <Heading>Loading...</Heading>
-      )}
+        {data ? (
+          data.map((item) => (
+            <Card
+              key={item.id}
+              id={item.id}
+              image={item.image}
+              name={item.title}
+              price={item.price}
+            />
+          ))
+        ) : (
+          <Heading>Loading...</Heading>
+        )}
     </StyledWrapper>
   );
 };

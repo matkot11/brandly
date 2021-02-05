@@ -8,11 +8,22 @@ const StyledWrapper = styled.div`
   display: grid;
   grid-template-rows: auto 1fr;
   height: 80vh;
+
+  @media only screen and (max-width: ${({theme}) => theme.size.l}) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    align-self: center;
+  }
 `;
 
 const StyledInnerWrapper = styled.div`
   grid-row: 2;
   align-self: center;
+  justify-self: center;
 `;
 
 const StyledHeading = styled(Heading)`

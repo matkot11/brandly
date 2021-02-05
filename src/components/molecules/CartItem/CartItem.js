@@ -19,13 +19,17 @@ const StyledWrapper = styled.div`
 const StyledInnerWrapper = styled.div`
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: ${({theme}) => theme.size.l}) {
+    flex-direction: column;
+  }
 `;
 
 const StyledImg = styled.img`
   max-width: 250px;
   max-height: 250px;
   border-radius: 5px;
-  margin-right: 40px;
+  margin-bottom: 10px;
 `;
 
 const StyledHeading = styled(Heading)`
