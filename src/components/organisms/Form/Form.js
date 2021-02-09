@@ -6,11 +6,16 @@ import Heading from 'components/atoms/Heading/Heading';
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-self: stretch;
   width: max-content;
   padding: 20px;
   background-color: ${({ theme }) => theme.lightGrey};
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media only screen and (max-width: ${({theme}) => theme.size.m}) {
+    padding: 10px;
+  }
 `;
 
 const StyledForm = styled.form`

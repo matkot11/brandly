@@ -57,10 +57,8 @@ const Register = () => {
         <Button as="button" type="submit" onClick={handleSubmit}>
           Register
         </Button>
-        <Heading small>
-          Have already an account?
-          <StyledLink to={routes.login}> Click here to login.</StyledLink>
-        </Heading>
+        <Heading small>Have already an account?</Heading>
+        <StyledLink to={routes.login}>Click here to login.</StyledLink>
       </Form>
     </NavbarTemplate>
   );

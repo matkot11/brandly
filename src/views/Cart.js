@@ -19,6 +19,9 @@ const StyledWrapper = styled.div`
 
 const StyledItemsWrapper = styled.div`
   width: 80%;
+  @media only screen and (max-width: ${({theme}) => theme.size.m}) {
+    margin: auto;
+  }
 
   & > * {
     margin: 50px 0;

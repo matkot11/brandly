@@ -13,6 +13,10 @@ const StyledWrapper = styled.div`
 
   & > * {
     margin: 30px;
+
+    @media only screen and (max-width: ${({theme}) => theme.size.m}) {
+    margin: 20px 0;
+  }
   }
 `;
 

@@ -49,10 +49,8 @@ const Login = () => {
         <Button type="submit" as="button" onClick={handleSubmit}>
           Login
         </Button>
-        <Heading small>
-          Do not have an account?{' '}
-          <StyledLink to={routes.register}>Click here to register.</StyledLink>
-        </Heading>
+        <Heading small>Do not have an account?</Heading>
+        <StyledLink to={routes.register}>Click here to register.</StyledLink>
       </Form>
     </NavbarTemplate>
   );

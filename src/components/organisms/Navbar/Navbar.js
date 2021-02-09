@@ -16,6 +16,10 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: ${({theme}) => theme.size.l}) {
+    flex-direction: column;
+  }
 `;
 
 const StyledInnerWrapper = styled.div`
@@ -30,9 +34,15 @@ const StyledInnerWrapper = styled.div`
 
 const StyledButtonsWrapper = styled.div`
   display: flex;
+  flex-direction: row;
+  align-items: center;
 
   & > * {
     margin: 0 25px;
+  }
+
+  @media only screen and (max-width: ${({theme}) => theme.size.m}) {
+    flex-direction: column;
   }
 `;
 

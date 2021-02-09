@@ -10,10 +10,18 @@ import Heading from 'components/atoms/Heading/Heading';
 import TextButton from 'components/atoms/TextButton/TextButton';
 
 const StyledWrapper = styled.div`
+align-self: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px;
+
+  @media only screen and (max-width: ${({theme}) => theme.size.m}) {
+    flex-direction: column;
+    & > * {
+      margin: 10px 0;
+    }
+  }
 `;
 
 const StyledInnerWrapper = styled.div`

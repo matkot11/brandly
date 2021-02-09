@@ -4,61 +4,51 @@ import SidebarTemplate from 'templates/SidebarTemplate';
 import Heading from 'components/atoms/Heading/Heading';
 import Button from 'components/atoms/Button/Button';
 import TextButton from 'components/atoms/TextButton/TextButton';
-import getUser from 'composables/getUser';
-import getCollection from 'composables/getCollection';
 import { routes } from 'routes';
 import useLogout from 'composables/useLogout';
+import { firestore } from 'firebase/config';
+import getUser from 'composables/getUser';
 
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  height: 80vh;
-`;
+  justify-content: center;
 
-const StyledImgWrapper = styled.div`
-  display: flex;
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
 
   & > * {
-    margin: 20px 50px;
+    margin: 20px 0;
   }
 `;
 
-const StyledImg = styled.img`
-  max-width: 300px;
-  max-height: 300px;
-  border-radius: 5px;
-`;
-
 const Done = () => {
-  const { user } = getUser();
-  const { results, loadData } = getCollection();
   const { logout } = useLogout();
+  const { user } = getUser();
 
-  useEffect(async () => {
+  useEffect(() => {
     if (user) {
-      await loadData(user.uid);
+      firestore
+        .collection(user.uid)
+        .get()
+        .then((doc) => {
+          doc.forEach((item) => {
+            item.ref.delete();
+          });
+        });
     }
   }, [user]);
 
   return (
     <SidebarTemplate>
       <StyledWrapper>
-        <Heading title="true">Congratulations🎉🎉</Heading>
-        <StyledImgWrapper>
-          {results ? (
-            results.map((result) => (
-              <StyledImg key={result.id} src={result.image} />
-            ))
-          ) : (
-            <Heading>Loading...</Heading>
-          )}
-        </StyledImgWrapper>
-        <Heading>^</Heading>
-        <Heading>Now it&apos;s yours!</Heading>
+        <Heading title="true">Success</Heading>
+        <Heading>Thank you for purchase</Heading>
         <Button to={routes.main}>Main page</Button>
-        {user && <TextButton onClick={logout}>Logout</TextButton>}
+        <TextButton onClick={logout}>Logout</TextButton>
       </StyledWrapper>
     </SidebarTemplate>
   );

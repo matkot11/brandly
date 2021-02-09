@@ -37,31 +37,37 @@ const Address = () => {
           placeholder="First name"
           value={firstName}
           onChange={(e) => getFirstName(e.target.value)}
+          required
         />
         <Input
           placeholder="Last name"
           value={lastName}
           onChange={(e) => getLastName(e.target.value)}
+          required
         />
         <Input
           placeholder="Street name"
           value={streetName}
           onChange={(e) => getStreetName(e.target.value)}
+          required
         />
         <Input
           placeholder="Street number"
           value={streetNumber}
           onChange={(e) => getStreetNumber(e.target.value)}
+          required
         />
         <Input
           placeholder="Postcode"
           value={postcode}
           onChange={(e) => getPostcode(e.target.value)}
+          required
         />
         <Input
           placeholder="Town / city"
           value={city}
           onChange={(e) => getCity(e.target.value)}
+          required
         />
         <Heading medium>Free delivery!!!</Heading>
         <Button as="button" type="submit" onClick={handleSubmit}>

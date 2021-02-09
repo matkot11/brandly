@@ -18,6 +18,8 @@ export const theme = {
     xxl: '4.5rem',
   },
   size: {
-    l: '72.3125rem'
+    l: '72.3125rem',
+    m: '31.25rem',
+    s: '17.5rem',
   },
 };

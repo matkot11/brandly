@@ -32,6 +32,9 @@ const StyledImg = styled.img`
 
 const StyledButton = styled(Button)`
   margin: 10px;
+  @media only screen and (max-width: ${({theme}) => theme.size.l}) {
+    margin: 5px;
+  }
 `;
 
 const StyledHeading = styled(Heading)`
