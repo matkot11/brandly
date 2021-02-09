@@ -27,6 +27,10 @@ const StyledInnerWrapper = styled.div`
   flex-direction: column;
   align-items: flex-end;
 
+  @media only screen and (max-width: ${({theme}) => theme.size.m}) {
+    align-items: center;
+  }
+
   & > * {
     margin: 10px 0;
   }
