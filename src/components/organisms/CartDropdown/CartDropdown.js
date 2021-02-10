@@ -20,25 +20,25 @@ const StyledItem = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  margin: 10px 0;
+  margin: 1rem 0;
 `;
 
 const StyledImg = styled.img`
-  max-width: 90px;
-  max-height: 80px;
+  max-width: 9rem;
+  max-height: 8rem;
   margin-right: 5px;
   border-radius: 5px;
 `;
 
 const StyledButton = styled(Button)`
-  margin: 10px;
+  margin: 1rem;
   @media only screen and (max-width: ${({theme}) => theme.size.l}) {
     margin: 5px;
   }
 `;
 
 const StyledHeading = styled(Heading)`
-  margin: 10px;
+  margin: 1rem;
 `;
 
 const CartDropdown = () => {

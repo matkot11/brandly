@@ -12,10 +12,10 @@ const StyledWrapper = styled.div`
   justify-content: center; 
 
   & > * {
-    margin: 30px;
+    margin: 3rem;
 
     @media only screen and (max-width: ${({theme}) => theme.size.m}) {
-    margin: 20px 0;
+    margin: 2rem 0;
   }
   }
 `;

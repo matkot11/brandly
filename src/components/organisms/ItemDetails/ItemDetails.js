@@ -14,7 +14,7 @@ const StyledWrapper = styled.div`
   justify-content: space-evenly;
 
   & > * {
-    margin: 0 20px;
+    margin: 0 2rem;
     @media only screen and (max-width: ${({ theme }) => theme.size.m}) {
       margin: 0;
     }
@@ -32,35 +32,23 @@ const StyledInnerWrapper = styled.div`
   justify-content: center;
 
   & > * {
-    margin: 20px 0;
+    margin: 2rem 0;
   }
 `;
 
 const StyledImg = styled.img`
-  max-width: 300px;
+  max-width: 30rem;
   border-radius: 5px;
-
-  @media only screen and (max-width: ${({ theme }) => theme.size.m}) {
-    max-width: 200px;
-  }
 `;
 
 const StyledHeading = styled(Heading)`
   align-self: center;
-  max-width: 500px;
-
-  @media only screen and (max-width: ${({ theme }) => theme.size.m}) {
-    max-width: 200px;
-  }
+  max-width: 50rem;
 `;
 
 const StyledParagraph = styled(Paragraph)`
-  margin-top: 20px;
-  max-width: 521px;
-
-  @media only screen and (max-width: ${({ theme }) => theme.size.m}) {
-    max-width: 200px;
-  }
+  margin-top: 2rem;
+  max-width: 52.1rem;
 `;
 
 const ItemDetails = ({ id, image, price, name, about }) => {

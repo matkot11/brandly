@@ -21,7 +21,7 @@ const StyledWrapper = styled.div`
   }
 
   & > * {
-    margin: 20px 0;
+    margin: 2rem 0;
   }
 `;
 

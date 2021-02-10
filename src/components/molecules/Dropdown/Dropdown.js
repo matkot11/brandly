@@ -18,7 +18,7 @@ const StyledDropdown = styled.div`
   flex-direction: column;
   align-items: center;
   width: max-content;
-  padding: 15px 0;
+  padding: 1.5rem 0;
 `;
 
 const StyledHeading = styled(Heading)`

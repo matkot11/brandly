@@ -1,34 +1,34 @@
 import styled, { css } from 'styled-components';
 
 const Input = styled.input`
-  width: 424px;
-  height: 54px;
+  width: 42.4rem;
+  height: 5.4rem;
   padding: 5px;
   border: none;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: ${({ theme }) => theme.fontSize.m};
 
-  @media only screen and (max-width: ${({theme}) => theme.size.m}) {
-    width: 300px;
-    height: 40px;
+   @media only screen and (max-width: ${({theme}) => theme.size.m}) {
+    width: 30rem;
+    height: 4rem;
   }
 
   @media only screen and (max-width: ${({theme}) => theme.size.s}) {
-    width: 220px;
+    width: 22rem;
   }
 
   ${({ small }) =>
     small &&
     css`
-      width: 143px;
+      width: 14.3rem;
     `}
 
   ${({ quantity }) =>
     quantity &&
     css`
-      width: 105px;
-      height: 44px;
+      width: 10.5rem;
+      height: 4.4rem;
       border: 1px solid ${({ theme }) => theme.black};
     `}
 

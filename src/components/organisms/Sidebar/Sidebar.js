@@ -27,7 +27,7 @@ const StyledInnerWrapper = styled.div`
 `;
 
 const StyledHeading = styled(Heading)`
-  margin: 20px 0;
+  margin: 2rem 0;
 
   ${({ active }) =>
     active &&

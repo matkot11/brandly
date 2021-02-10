@@ -8,7 +8,7 @@ import Heading from 'components/atoms/Heading/Heading';
 
 const StyledInnerWrap = styled.div`
   min-width: 70vw;
-  padding-top: 50px;
+  padding-top: 5rem;
 `;
 
 const Item = () => {

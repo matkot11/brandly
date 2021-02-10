@@ -18,7 +18,7 @@ const StyledInnerWrapper = styled.div`
 
     Input {
       &:nth-child(2) {
-        margin-top: 20px;
+        margin-top: 2rem;
       }
     }
   }

@@ -7,7 +7,7 @@ import getItems from 'composables/getItems';
 
 const StyledHeading = styled(Heading)`
   background-color: ${({ theme }) => theme.white};
-  padding: 12px 16px;
+  padding: 1.2rem 1.6rem;
   border: none;
   text-decoration: none;
   cursor: pointer;

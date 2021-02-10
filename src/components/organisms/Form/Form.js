@@ -8,13 +8,13 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   align-self: stretch;
   width: max-content;
-  padding: 20px;
+  padding: 2rem;
   background-color: ${({ theme }) => theme.lightGrey};
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @media only screen and (max-width: ${({theme}) => theme.size.m}) {
-    padding: 10px;
+    padding: 1rem;
   }
 `;
 
@@ -24,12 +24,12 @@ const StyledForm = styled.form`
   align-items: center;
 
   & > * {
-    margin: 10px 0;
+    margin: 1rem 0;
   }
 `;
 
 const StyledHeading = styled(Heading)`
-  margin: 20px 0;
+  margin: 2rem 0;
   align-self: left;
 `;
 

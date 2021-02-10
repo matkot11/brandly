@@ -32,7 +32,7 @@ const StyledInnerWrapper = styled.div`
   }
 
   & > * {
-    margin: 10px 0;
+    margin: 1rem 0;
   }
 `;
 
@@ -42,7 +42,7 @@ const StyledButtonsWrapper = styled.div`
   align-items: center;
 
   & > * {
-    margin: 0 25px;
+    margin: 0 2.5rem;
   }
 
   @media only screen and (max-width: ${({theme}) => theme.size.m}) {

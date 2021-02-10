@@ -24,7 +24,7 @@ const StyledItemsWrapper = styled.div`
   }
 
   & > * {
-    margin: 50px 0;
+    margin: 5rem 0;
   }
 `;
 
@@ -33,11 +33,11 @@ const StyledPriceWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 5rem;
+  right: 5rem;
 
   & > * {
-    margin: 10px 0;
+    margin: 1rem 0;
   }
 `;
 

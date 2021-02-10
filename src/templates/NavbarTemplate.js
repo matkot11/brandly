@@ -11,7 +11,7 @@ const StyledWrapper = styled.div`
 const StyledInnerWrapper = styled.div`
   grid-row: 2;
   justify-self: center;
-  margin-top: 50px;
+  margin-top: 5rem;
 `;
 
 const StyledNavbar = styled(Navbar)`

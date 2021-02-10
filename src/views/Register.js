@@ -10,7 +10,7 @@ import Button from 'components/atoms/Button/Button';
 import Heading from 'components/atoms/Heading/Heading';
 
 const StyledHeading = styled(Heading)`
-  max-width: 400px;
+  max-width: 40rem;
   color: ${({ theme }) => theme.red};
 `;
 

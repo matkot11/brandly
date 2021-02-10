@@ -17,9 +17,9 @@ const StyledWrapper = styled.div`
 const StyledImg = styled.img`
   border-radius: 5px 5px 0 0;
   object-fit: contain;
-  width: 250px;
-  height: 250px;
-  padding: 10px;
+  width: 25rem;
+  height: 25rem;
+  padding: 1rem;
 `;
 
 const StyledButton = styled(Button)`
@@ -33,11 +33,11 @@ const StyledHeadingWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   align-content: center;
-  max-width: 220px;
+  max-width: 22rem;
 `;
 
 const StyledHeading = styled(Heading)`
-  margin: 0 0 10px 0;
+  margin: 0 0 1rem 0;
   text-align: center;
   font-weight: ${({ theme }) => theme.light};
 `;

@@ -14,12 +14,12 @@ align-self: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px;
+  margin: 2rem;
 
   @media only screen and (max-width: ${({theme}) => theme.size.m}) {
     flex-direction: column;
     & > * {
-      margin: 10px 0;
+      margin: 1rem 0;
     }
   }
 `;
@@ -34,14 +34,14 @@ const StyledInnerWrapper = styled.div`
 `;
 
 const StyledImg = styled.img`
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 25rem;
+  max-height: 25rem;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 `;
 
 const StyledHeading = styled(Heading)`
-  max-width: 300px;
+  max-width: 30rem;
 `;
 
 const CartItem = ({ image, name, price, id }) => {
