@@ -1,45 +1,18 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { routes } from 'routes/index';
-import styled from 'styled-components';
 import getUser from 'composables/getUser';
 import getCollection from 'composables/getCollection';
-import Dropdown from 'components/molecules/Dropdown/Dropdown';
-import Heading from 'components/atoms/Heading/Heading';
-import Button from 'components/atoms/Button/Button';
 import { getMessageData } from 'redux/message/messageSlice';
 import { useSelector } from 'react-redux';
-
-const StyledDropdown = styled(Dropdown)`
-  display: flex;
-  flex-direction: column;
-`;
-
-const StyledItem = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  margin: 1rem 0;
-`;
-
-const StyledImg = styled.img`
-  max-width: 9rem;
-  max-height: 8rem;
-  margin-right: 5px;
-  border-radius: 5px;
-`;
-
-const StyledButton = styled(Button)`
-  margin: 1rem;
-  @media only screen and (max-width: ${({theme}) => theme.size.l}) {
-    margin: 5px;
-  }
-`;
-
-const StyledHeading = styled(Heading)`
-  margin: 1rem;
-`;
+import Heading from 'components/atoms/Heading/Heading';
+import {
+  StyledButton,
+  StyledDropdown,
+  StyledHeading,
+  StyledImg,
+  StyledItem,
+} from './CartDropdown-styles';
 
 const CartDropdown = () => {
   const { user } = getUser();

@@ -1,6 +1,6 @@
 import React from 'react';
-import NavbarTemplate from 'templates/NavbarTemplate';
-import Items from 'components/organisms/Items/Items';
+import NavbarTemplate from 'templates/Navbar/Navbar-template';
+import Items from 'components/organisms/Items/Items-component';
 
 const MainPage = () => (
   <NavbarTemplate>

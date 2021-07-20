@@ -1,28 +1,12 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components';
-import SidebarTemplate from 'templates/SidebarTemplate';
-import Form from 'components/organisms/Form/Form';
+import SidebarTemplate from 'templates/Sidebar/Sidebar-template';
+import Form from 'components/organisms/Form/Form-component';
 import Input from 'components/atoms/Input/Input';
 import Button from 'components/atoms/Button/Button';
 import { routes } from 'routes';
 import getUser from 'composables/getUser';
 import getCollection from 'composables/getCollection';
-
-const StyledInnerWrapper = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-
-  @media only screen and (max-width: ${({theme}) => theme.size.m}) {
-    flex-direction: column;
-
-    Input {
-      &:nth-child(2) {
-        margin-top: 2rem;
-      }
-    }
-  }
-`;
+import { StyledInnerWrapper } from './Payment-styles';
 
 const Payment = () => {
   const { user } = getUser();

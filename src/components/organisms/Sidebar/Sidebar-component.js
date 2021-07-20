@@ -1,52 +1,12 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
-import Heading from 'components/atoms/Heading/Heading';
 import { routes } from 'routes';
-
-const StyledWrapper = styled.div`
-  display: grid;
-  grid-template-rows: auto 1fr;
-  height: 80vh;
-
-  @media only screen and (max-width: ${({theme}) => theme.size.l}) {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: max-content;
-    align-self: center;
-  }
-`;
-
-const StyledInnerWrapper = styled.div`
-  grid-row: 2;
-  align-self: center;
-  justify-self: center;
-`;
-
-const StyledHeading = styled(Heading)`
-  margin: 2rem 0;
-
-  ${({ active }) =>
-    active &&
-    css`
-      color: ${({ theme }) => theme.purple};
-      text-decoration: underline;
-    `}
-`;
-
-const StyledHeadingTitle = styled(Heading)`
-  grid-row: 1;
-  background-color: ${({ theme }) => theme.white};
-  border: none;
-  cursor: pointer;
-
-  :focus {
-    outline: none;
-  }
-`;
+import {
+  StyledHeading,
+  StyledHeadingTitle,
+  StyledInnerWrapper,
+  StyledWrapper,
+} from './Sidebar-styles';
 
 const Sidebar = () => {
   const location = useLocation();

@@ -1,5 +1,5 @@
 import React from 'react';
-import CartDropdown from './CartDropdown';
+import CartDropdown from './CartDropdown-component';
 
 export default {
   title: 'CartDropdown',

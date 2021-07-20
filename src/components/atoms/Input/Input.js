@@ -9,15 +9,6 @@ const Input = styled.input`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: ${({ theme }) => theme.fontSize.m};
 
-   @media only screen and (max-width: ${({theme}) => theme.size.m}) {
-    width: 30rem;
-    height: 4rem;
-  }
-
-  @media only screen and (max-width: ${({theme}) => theme.size.s}) {
-    width: 22rem;
-  }
-
   ${({ small }) =>
     small &&
     css`

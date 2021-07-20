@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import getItems from 'composables/getItems';
-import NavbarTemplate from 'templates/NavbarTemplate';
-import ItemDetails from 'components/organisms/ItemDetails/ItemDetails';
+import NavbarTemplate from 'templates/Navbar/Navbar-template';
+import ItemDetails from 'components/organisms/ItemDetails/ItemDetails-component';
 import Heading from 'components/atoms/Heading/Heading';
-
-const StyledInnerWrap = styled.div`
-  min-width: 70vw;
-  padding-top: 5rem;
-`;
+import { StyledInnerWrap } from './Item-styles';
 
 const Item = () => {
   const params = useParams();

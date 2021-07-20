@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-const Button = styled(Link)`
+// const Button = styled(Link)`
+const Button = styled.a`
   background-color: ${({ theme }) => theme.purple};
   color: ${({ theme }) => theme.white};
   font-size: ${({ theme }) => theme.fontSize.m};
@@ -29,8 +30,8 @@ const Button = styled(Link)`
       background-color: ${({ theme }) => theme.white};
       color: ${({ theme }) => theme.black};
       border: 2px solid ${({ theme }) => theme.black};
-      width: 34.3rem;
-      height: 6.4rem;
+      /* width: 34.3rem; */
+      /* height: 6.4rem; */
       padding: 1rem 2rem 1rem 2rem;
       font-size: ${({ theme }) => theme.fontSize.xl};
 

@@ -1,48 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { firestore } from 'firebase/config';
 import { useDispatch } from 'react-redux';
 import { getMessage } from 'redux/message/messageSlice';
 import { getError } from 'redux/error/errorSlice';
 import getUser from 'composables/getUser';
-import Heading from 'components/atoms/Heading/Heading';
 import TextButton from 'components/atoms/TextButton/TextButton';
-
-const StyledWrapper = styled.div`
-align-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 2rem;
-
-  @media only screen and (max-width: ${({theme}) => theme.size.m}) {
-    flex-direction: column;
-    & > * {
-      margin: 1rem 0;
-    }
-  }
-`;
-
-const StyledInnerWrapper = styled.div`
-  display: flex;
-  align-items: center;
-
-  @media only screen and (max-width: ${({theme}) => theme.size.l}) {
-    flex-direction: column;
-  }
-`;
-
-const StyledImg = styled.img`
-  max-width: 25rem;
-  max-height: 25rem;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-`;
-
-const StyledHeading = styled(Heading)`
-  max-width: 30rem;
-`;
+import Heading from 'components/atoms/Heading/Heading';
+import {
+  StyledHeading,
+  StyledImg,
+  StyledInnerWrapper,
+  StyledWrapper,
+} from './CartItem-styles';
 
 const CartItem = ({ image, name, price, id }) => {
   const { user } = getUser();

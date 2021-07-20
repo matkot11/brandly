@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Heading from 'components/atoms/Heading/Heading';
-import Dropdown from './Dropdown';
+import Dropdown from './Dropdown-component';
 
 export default {
   title: 'Dropdown',

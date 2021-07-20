@@ -1,15 +1,15 @@
 import React from 'react';
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { routes } from 'routes/index';
-import MainTemplate from 'templates/MainTemplate';
-import MainPage from 'views/MainPage';
-import Login from 'views/Login';
-import Register from 'views/Register';
-import Item from 'views/Item';
-import Cart from 'views/Cart';
-import Address from 'views/Address';
-import Payment from 'views/Payment';
-import Done from 'views/Done';
+import MainTemplate from 'templates/Main/Main-template';
+import MainPage from 'views/MainPage/MainPage-view';
+import Login from 'views/Login/Login-view';
+import Register from 'views/Register/Register-view';
+import Item from 'views/Item/Item-view';
+import Cart from 'views/Cart/Cart-view';
+import Address from 'views/Address/Address-view';
+import Payment from 'views/Payment/Payment-view';
+import Done from 'views/Done/Done-view';
 import getUser from 'composables/getUser';
 
 const Root = () => {

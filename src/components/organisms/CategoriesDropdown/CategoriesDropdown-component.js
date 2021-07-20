@@ -1,26 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import Dropdown from 'components/molecules/Dropdown/Dropdown';
-import Heading from 'components/atoms/Heading/Heading';
+import Dropdown from 'components/molecules/Dropdown/Dropdown-component';
 import getItems from 'composables/getItems';
-
-const StyledHeading = styled(Heading)`
-  background-color: ${({ theme }) => theme.white};
-  padding: 1.2rem 1.6rem;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-
-  :hover {
-    color: ${({ theme }) => theme.purple};
-    text-decoration: underline;
-  }
-
-  :focus {
-    outline: none;
-  }
-`;
+import Heading from 'components/atoms/Heading/Heading';
+import { StyledHeading } from './CategoriesDropdown-styles';
 
 const CategoriesDropdown = () => {
   const { load, error, data } = getItems('categories');

@@ -1,22 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { routes } from 'routes';
-import styled from 'styled-components';
 import useRegister from 'composables/useRegister';
-import NavbarTemplate from 'templates/NavbarTemplate';
-import Form from 'components/organisms/Form/Form';
+import NavbarTemplate from 'templates/Navbar/Navbar-template';
+import Form from 'components/organisms/Form/Form-component';
 import Input from 'components/atoms/Input/Input';
 import Button from 'components/atoms/Button/Button';
 import Heading from 'components/atoms/Heading/Heading';
-
-const StyledHeading = styled(Heading)`
-  max-width: 40rem;
-  color: ${({ theme }) => theme.red};
-`;
-
-const StyledLink = styled(Link)`
-  color: ${({ theme }) => theme.darkGrey};
-`;
+import { StyledHeading, StyledLink } from './Register-styles';
 
 const Register = () => {
   const { error, register } = useRegister();

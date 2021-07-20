@@ -2,7 +2,7 @@ import React from 'react';
 import Input from 'components/atoms/Input/Input';
 import Button from 'components/atoms/Button/Button';
 import Heading from 'components/atoms/Heading/Heading';
-import Form from './Form';
+import Form from './Form-component';
 
 export default {
   title: 'Form',

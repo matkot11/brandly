@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemDetails from './ItemDetails';
+import ItemDetails from './ItemDetails-component';
 
 export default {
   title: 'ItemDetails',

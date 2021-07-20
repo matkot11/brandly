@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import useAddress from 'composables/useAddress';
-import SidebarTemplate from 'templates/SidebarTemplate';
-import Form from 'components/organisms/Form/Form';
+import SidebarTemplate from 'templates/Sidebar/Sidebar-template';
+import Form from 'components/organisms/Form/Form-component';
 import Input from 'components/atoms/Input/Input';
 import Button from 'components/atoms/Button/Button';
 import Heading from 'components/atoms/Heading/Heading';

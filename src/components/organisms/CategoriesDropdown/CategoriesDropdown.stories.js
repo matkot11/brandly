@@ -1,5 +1,5 @@
 import React from 'react';
-import CategoriesDropdown from './CategoriesDropdown';
+import CategoriesDropdown from './CategoriesDropdown-component';
 
 export default {
   title: 'CategoriesDropdown',
