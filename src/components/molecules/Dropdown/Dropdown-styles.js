@@ -20,6 +20,7 @@ export const StyledDropdown = styled.div`
 `;
 
 export const StyledHeading = styled(Heading)`
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   background-color: ${({ theme }) => theme.white};
   border: none;

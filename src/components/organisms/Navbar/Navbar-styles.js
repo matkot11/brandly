@@ -20,7 +20,7 @@ export const StyledButtonsWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 `;
 
 export const StyledMessageWrapper = styled.div`
@@ -29,6 +29,7 @@ export const StyledMessageWrapper = styled.div`
 `;
 
 export const StyledHeading = styled(Heading)`
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   background-color: ${({ theme }) => theme.white};
   border: none;

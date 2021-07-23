@@ -9,7 +9,8 @@ const Heading = styled.h1`
   ${({ title }) =>
     title &&
     css`
-      font-size: ${({ theme }) => theme.fontSize.l};
+      /* font-size: ${({ theme }) => theme.fontSize.l}; */
+      font-size: 3rem;
       font-weight: ${({ theme }) => theme.bold};
       letter-spacing: 3px;
       text-decoration: none;

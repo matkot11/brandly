@@ -3,6 +3,7 @@ import Button from 'components/atoms/Button/Button';
 import Heading from 'components/atoms/Heading/Heading';
 
 export const StyledWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
