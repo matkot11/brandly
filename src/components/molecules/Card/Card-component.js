@@ -13,7 +13,7 @@ const Card = ({ image, name, price, id }) => (
   <StyledWrapper>
     <StyledImg src={image} alt="item" />
     <StyledHeadingWrapper>
-      <StyledHeading small>{name}</StyledHeading>
+      <StyledHeading>{name}</StyledHeading>
       <Heading medium>
         {price}
         <span>£</span>

@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  StyledInnerWrapper,
-  StyledNavbar,
-  StyledWrapper,
-} from './Navbar-styles';
+import Navbar from 'components/organisms/Navbar/Navbar-component';
+import { StyledWrapper, StyledInnerWrapper } from './Navbar-styles';
 
 const NavbarTemplate = ({ children }) => (
   <StyledWrapper>
-    <StyledNavbar />
+    <Navbar />
     <StyledInnerWrapper>{children}</StyledInnerWrapper>
   </StyledWrapper>
 );

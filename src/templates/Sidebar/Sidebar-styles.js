@@ -2,17 +2,19 @@ import styled from 'styled-components';
 import Sidebar from 'components/organisms/Sidebar/Sidebar-component';
 
 export const StyledWrapper = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr;
+  /* display: grid; */
+  /* grid-template-columns: auto 1fr; */
+  display: flex;
+  flex-direction: column;
 `;
 
 export const StyledInnerWrapper = styled.div`
-  grid-column: 2;
+  /* grid-column: 2; */
   justify-self: center;
   align-self: center;
   margin-top: 5rem;
 `;
 
 export const StyledSidebar = styled(Sidebar)`
-  grid-column: 1;
+  /* grid-column: 1; */
 `;

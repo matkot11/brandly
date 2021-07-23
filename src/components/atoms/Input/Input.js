@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 
 const Input = styled.input`
-  width: 42.4rem;
-  height: 5.4rem;
+  /* width: 42.4rem; */
+  /* height: 5.4rem; */
   padding: 5px;
   border: none;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: ${({ theme }) => theme.fontSize.m};
+  font-size: 1.8rem;
 
   ${({ small }) =>
     small &&
@@ -18,8 +18,8 @@ const Input = styled.input`
   ${({ quantity }) =>
     quantity &&
     css`
-      width: 10.5rem;
-      height: 4.4rem;
+      /* width: 10.5rem; */
+      /* height: 4.4rem; */
       border: 1px solid ${({ theme }) => theme.black};
     `}
 

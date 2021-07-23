@@ -4,6 +4,7 @@ import Paragraph from 'components/atoms/Paragraph/Paragraph';
 
 export const StyledWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 
   & > * {
@@ -18,21 +19,23 @@ export const StyledInnerWrapper = styled.div`
   justify-content: center;
 
   & > * {
-    margin: 2rem 0;
+    margin: 1.2rem 0;
   }
 `;
 
 export const StyledImg = styled.img`
-  max-width: 30rem;
+  max-width: 10rem;
   border-radius: 5px;
 `;
 
 export const StyledHeading = styled(Heading)`
-  align-self: center;
   max-width: 50rem;
+  align-self: center;
+  text-align: center;
 `;
 
 export const StyledParagraph = styled(Paragraph)`
   margin-top: 2rem;
+  font-size: 1.7rem;
   max-width: 52.1rem;
 `;

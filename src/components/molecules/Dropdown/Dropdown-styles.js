@@ -2,11 +2,14 @@ import styled from 'styled-components';
 import Heading from 'components/atoms/Heading/Heading';
 
 export const StyledWrapper = styled.div`
-  position: relative;
+  /* position: relative; */
   display: inline-block;
 `;
 
 export const StyledDropdown = styled.div`
+  padding: 1.5rem 0;
+  left: 0;
+  right: 0;
   background-color: ${({ theme }) => theme.white};
   position: absolute;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -14,8 +17,6 @@ export const StyledDropdown = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: max-content;
-  padding: 1.5rem 0;
 `;
 
 export const StyledHeading = styled(Heading)`

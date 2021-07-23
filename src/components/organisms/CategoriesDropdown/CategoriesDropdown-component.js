@@ -16,21 +16,16 @@ const CategoriesDropdown = () => {
     <Dropdown name="Categories">
       {data ? (
         data.map((item) => (
-          <StyledHeading
-            medium="true"
-            as={Link}
-            key={item}
-            to={`/category/${item}`}
-          >
+          <StyledHeading as={Link} key={item} to={`/category/${item}`}>
             {item}
           </StyledHeading>
         ))
       ) : !error ? (
-        <Heading small>Loading...</Heading>
+        <Heading>Loading...</Heading>
       ) : (
-        <Heading small>{error}</Heading>
+        <Heading>{error}</Heading>
       )}
-      <StyledHeading medium="true" as={Link} to="/">
+      <StyledHeading as={Link} to="/">
         all products
       </StyledHeading>
     </Dropdown>

@@ -44,9 +44,6 @@ const Navbar = () => {
               <StyledHeading as={Link} to={routes.login}>
                 Login
               </StyledHeading>
-              <StyledHeading as={Link} to={routes.register}>
-                Register
-              </StyledHeading>
             </>
           )}
         </StyledButtonsWrapper>

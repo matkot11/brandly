@@ -16,8 +16,20 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Montserrat', sans-serif;
-  padding: 10px 40px;
 }
+
+h2, h1, h3 {
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
 `;
 
 export default GlobalStyle;

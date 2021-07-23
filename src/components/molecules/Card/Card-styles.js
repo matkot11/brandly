@@ -15,8 +15,8 @@ export const StyledWrapper = styled.div`
 export const StyledImg = styled.img`
   border-radius: 5px 5px 0 0;
   object-fit: contain;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   padding: 1rem;
 `;
 
@@ -26,12 +26,12 @@ export const StyledButton = styled(Button)`
 `;
 
 export const StyledHeadingWrapper = styled.div`
-  margin: 15px 0 0 0;
+  margin: 1.5rem 0 0 0;
+  /* max-width: 22rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  max-width: 22rem;
 `;
 
 export const StyledHeading = styled(Heading)`

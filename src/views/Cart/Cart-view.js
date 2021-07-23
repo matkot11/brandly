@@ -41,7 +41,7 @@ const Cart = () => {
             ))}
           </StyledItemsWrapper>
           <StyledPriceWrapper>
-            <Heading large>Total: {total}£</Heading>
+            <Heading medium>Total: {total}£</Heading>
             <Button to={routes.address}>Go to checkout</Button>
           </StyledPriceWrapper>
         </StyledWrapper>

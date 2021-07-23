@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-// const Button = styled(Link)`
-const Button = styled.a`
+/* const Button = styled.a` */
+const Button = styled(Link)`
   background-color: ${({ theme }) => theme.purple};
   color: ${({ theme }) => theme.white};
-  font-size: ${({ theme }) => theme.fontSize.m};
+  font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: ${({ theme }) => theme.bold};
   border: none;
   border-radius: 5rem;

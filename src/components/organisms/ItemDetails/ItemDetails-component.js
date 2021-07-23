@@ -31,9 +31,10 @@ const ItemDetails = ({ id, image, price, name, about }) => {
   return (
     <StyledWrapper>
       <StyledInnerWrapper>
+        <StyledHeading medium>{name}</StyledHeading>
         <StyledImg src={image} alt="item" />
         <Heading medium>
-          Price: {price}
+          {price}
           <span>£</span>
         </Heading>
         {user ? (
@@ -42,7 +43,7 @@ const ItemDetails = ({ id, image, price, name, about }) => {
           </Button>
         ) : (
           <StyledInnerWrapper>
-            <Heading medium> Login to add item to cart.</Heading>
+            <Heading> Login to add item to cart.</Heading>
             <Button width="max-content" as={Link} to={routes.login}>
               Login
             </Button>
@@ -50,7 +51,6 @@ const ItemDetails = ({ id, image, price, name, about }) => {
         )}
       </StyledInnerWrapper>
       <StyledInnerWrapper>
-        <StyledHeading>{name}</StyledHeading>
         <StyledParagraph>{about}</StyledParagraph>
       </StyledInnerWrapper>
     </StyledWrapper>

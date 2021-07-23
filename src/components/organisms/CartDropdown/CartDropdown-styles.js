@@ -13,7 +13,7 @@ export const StyledItem = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  margin: 1rem 0;
+  margin-bottom: 2rem;
 `;
 
 export const StyledImg = styled.img`

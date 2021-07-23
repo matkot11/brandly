@@ -6,7 +6,6 @@ import Button from 'components/atoms/Button/Button';
 import { routes } from 'routes';
 import getUser from 'composables/getUser';
 import getCollection from 'composables/getCollection';
-import { StyledInnerWrapper } from './Payment-styles';
 
 const Payment = () => {
   const { user } = getUser();
@@ -23,10 +22,8 @@ const Payment = () => {
       <Form title="Payment">
         <Input placeholder="Name on card" />
         <Input placeholder="Card number" />
-        <StyledInnerWrapper>
-          <Input small placeholder="MM / YY" />
-          <Input small placeholder="CVC" />
-        </StyledInnerWrapper>
+        <Input small placeholder="MM / YY" />
+        <Input small placeholder="CVC" />
         <Button to={routes.done}>Pay {total}£</Button>
       </Form>
     </SidebarTemplate>

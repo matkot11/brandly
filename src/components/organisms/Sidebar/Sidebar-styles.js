@@ -4,17 +4,20 @@ import Heading from 'components/atoms/Heading/Heading';
 export const StyledWrapper = styled.div`
   display: grid;
   grid-template-rows: auto 1fr;
-  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  /* height: 80vh; */
 `;
 
 export const StyledInnerWrapper = styled.div`
+  margin-top: 2rem;
   grid-row: 2;
   align-self: center;
   justify-self: center;
 `;
 
 export const StyledHeading = styled(Heading)`
-  margin: 2rem 0;
+  margin: 1rem 0;
 
   ${({ active }) =>
     active &&

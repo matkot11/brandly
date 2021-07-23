@@ -49,7 +49,7 @@ const CartDropdown = () => {
         ))
       ) : (
         <>
-          <StyledHeading medium> Login to see your cart</StyledHeading>
+          <StyledHeading> Login to see your cart</StyledHeading>
           <StyledButton width="max-content" as={Link} to={routes.login}>
             Login
           </StyledButton>

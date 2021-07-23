@@ -43,7 +43,7 @@ const CartItem = ({ image, name, price, id }) => {
     <StyledWrapper>
       <StyledInnerWrapper>
         <StyledImg src={image} alt="item" />
-        <StyledHeading medium>{name}</StyledHeading>
+        <StyledHeading>{name}</StyledHeading>
       </StyledInnerWrapper>
       <Heading medium>
         {price}

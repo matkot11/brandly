@@ -17,20 +17,26 @@ const Sidebar = () => {
       </StyledHeadingTitle>
       <StyledInnerWrapper>
         {location.pathname === '/cart/address' ? (
-          <StyledHeading active>Address</StyledHeading>
+          <StyledHeading large active>
+            Address
+          </StyledHeading>
         ) : (
-          <StyledHeading large>Address</StyledHeading>
+          <StyledHeading medium>Address</StyledHeading>
         )}
         {location.pathname === '/cart/payment' ? (
-          <StyledHeading active>Payment</StyledHeading>
+          <StyledHeading large active>
+            Payment
+          </StyledHeading>
         ) : (
-          <StyledHeading large>Payment</StyledHeading>
+          <StyledHeading medium>Payment</StyledHeading>
         )}
 
         {location.pathname === '/cart/done' ? (
-          <StyledHeading active>Done</StyledHeading>
+          <StyledHeading large active>
+            Done
+          </StyledHeading>
         ) : (
-          <StyledHeading large>Done</StyledHeading>
+          <StyledHeading medium>Done</StyledHeading>
         )}
       </StyledInnerWrapper>
     </StyledWrapper>
