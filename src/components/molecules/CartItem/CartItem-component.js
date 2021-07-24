@@ -12,6 +12,7 @@ import {
   StyledImg,
   StyledInnerWrapper,
   StyledWrapper,
+  StyledPriceWrapper,
 } from './CartItem-styles';
 
 const CartItem = ({ image, name, price, id }) => {
@@ -45,11 +46,13 @@ const CartItem = ({ image, name, price, id }) => {
         <StyledImg src={image} alt="item" />
         <StyledHeading>{name}</StyledHeading>
       </StyledInnerWrapper>
-      <Heading medium>
-        {price}
-        <span>£</span>
-      </Heading>
-      <TextButton onClick={handleDeleteItem}>remove</TextButton>
+      <StyledPriceWrapper>
+        <Heading medium>
+          {price}
+          <span>£</span>
+        </Heading>
+        <TextButton onClick={handleDeleteItem}>remove</TextButton>
+      </StyledPriceWrapper>
     </StyledWrapper>
   );
 };

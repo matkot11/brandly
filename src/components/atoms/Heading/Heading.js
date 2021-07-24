@@ -4,16 +4,22 @@ const Heading = styled.h1`
   color: ${({ theme }) => theme.black};
   font-weight: ${({ theme }) => theme.bold};
   font-size: ${({ theme }) => theme.fontSize.s};
-  margin: 0;
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.l}) {
+    font-size: 1.8rem;
+  }
 
   ${({ title }) =>
     title &&
     css`
-      /* font-size: ${({ theme }) => theme.fontSize.l}; */
       font-size: 3rem;
       font-weight: ${({ theme }) => theme.bold};
       letter-spacing: 3px;
       text-decoration: none;
+
+      @media only screen and (min-width: ${({ theme }) => theme.size.l}) {
+        font-size: ${({ theme }) => theme.fontSize.xl};
+      }
     `}
 
   ${({ small }) =>

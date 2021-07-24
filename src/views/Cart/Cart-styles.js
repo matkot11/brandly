@@ -2,15 +2,11 @@ import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
   display: flex;
-  /* align-items: flex-end; */
   flex-direction: column;
   justify-content: space-between;
-  /* min-width: 80vw; */
 `;
 
 export const StyledItemsWrapper = styled.div`
-  /* width: 80%; */
-
   & > * {
     margin: 1rem 0;
   }

@@ -10,6 +10,10 @@ export const StyledWrapper = styled.div`
   & > * {
     margin: 0 2rem;
   }
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.m}) {
+    flex-direction: row;
+  }
 `;
 
 export const StyledInnerWrapper = styled.div`
@@ -26,6 +30,10 @@ export const StyledInnerWrapper = styled.div`
 export const StyledImg = styled.img`
   max-width: 10rem;
   border-radius: 5px;
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.s}) {
+    max-width: 15rem;
+  }
 `;
 
 export const StyledHeading = styled(Heading)`
@@ -38,4 +46,8 @@ export const StyledParagraph = styled(Paragraph)`
   margin-top: 2rem;
   font-size: 1.7rem;
   max-width: 52.1rem;
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.m}) {
+    font-size: 2rem;
+  }
 `;

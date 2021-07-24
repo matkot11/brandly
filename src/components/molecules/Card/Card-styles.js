@@ -10,7 +10,10 @@ export const StyledWrapper = styled.div`
   justify-content: space-between;
   border-radius: 5px;
   border: 2px solid ${({ theme }) => theme.lightGrey};
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.s}) {
+    width: 20rem;
+  }
 `;
 
 export const StyledImg = styled.img`
@@ -28,7 +31,6 @@ export const StyledButton = styled(Button)`
 
 export const StyledHeadingWrapper = styled.div`
   margin: 1.5rem 0 0 0;
-  /* max-width: 22rem; */
   display: flex;
   flex-direction: column;
   align-items: center;

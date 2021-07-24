@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  StyledInnerWrapper,
-  StyledSidebar,
-  StyledWrapper,
-} from './Sidebar-styles';
+import Sidebar from 'components/organisms/Sidebar/Sidebar-component';
+import { StyledInnerWrapper, StyledWrapper } from './Sidebar-styles';
 
 const SidebarTemplate = ({ children }) => (
   <StyledWrapper>
-    <StyledSidebar />
+    <Sidebar />
     <StyledInnerWrapper>{children}</StyledInnerWrapper>
   </StyledWrapper>
 );

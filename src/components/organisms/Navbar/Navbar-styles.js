@@ -2,9 +2,16 @@ import styled from 'styled-components';
 import Heading from 'components/atoms/Heading/Heading';
 
 export const StyledWrapper = styled.div`
+  align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.m}) {
+    width: 80vw;
+    flex-direction: row;
+  }
 `;
 
 export const StyledInnerWrapper = styled.div`
@@ -13,17 +20,25 @@ export const StyledInnerWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 1rem 0;
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.m}) {
+    width: auto;
+  }
 `;
 
 export const StyledButtonsWrapper = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+
+  & > * {
+    margin: 0 1rem;
+  }
 `;
 
 export const StyledMessageWrapper = styled.div`
+  margin-top: 1rem;
+  width: 90%;
   display: flex;
   align-items: center;
 `;

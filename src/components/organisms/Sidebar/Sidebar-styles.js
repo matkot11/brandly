@@ -6,7 +6,6 @@ export const StyledWrapper = styled.div`
   grid-template-rows: auto 1fr;
   align-items: center;
   justify-content: center;
-  /* height: 80vh; */
 `;
 
 export const StyledInnerWrapper = styled.div`

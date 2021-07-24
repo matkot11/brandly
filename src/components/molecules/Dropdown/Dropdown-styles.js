@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Heading from 'components/atoms/Heading/Heading';
 
 export const StyledWrapper = styled.div`
-  /* position: relative; */
   display: inline-block;
 `;
 
@@ -17,6 +16,11 @@ export const StyledDropdown = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.s}) {
+    left: auto;
+    right: auto;
+  }
 `;
 
 export const StyledHeading = styled(Heading)`

@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
-/* const Button = styled.a` */
 const Button = styled(Link)`
   background-color: ${({ theme }) => theme.purple};
   color: ${({ theme }) => theme.white};
@@ -27,12 +26,10 @@ const Button = styled(Link)`
   ${({ whiteButton }) =>
     whiteButton &&
     css`
+      padding: 1rem 2rem 1rem 2rem;
       background-color: ${({ theme }) => theme.white};
       color: ${({ theme }) => theme.black};
       border: 2px solid ${({ theme }) => theme.black};
-      /* width: 34.3rem; */
-      /* height: 6.4rem; */
-      padding: 1rem 2rem 1rem 2rem;
       font-size: ${({ theme }) => theme.fontSize.xl};
 
       :active {

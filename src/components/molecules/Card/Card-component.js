@@ -19,6 +19,7 @@ const Card = ({ image, name, price, id }) => (
         <span>£</span>
       </Heading>
     </StyledHeadingWrapper>
+
     <StyledButton id={id} to={`/item/${id}`}>
       VIEW
     </StyledButton>

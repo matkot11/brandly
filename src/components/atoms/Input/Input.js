@@ -1,8 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const Input = styled.input`
-  /* width: 42.4rem; */
-  /* height: 5.4rem; */
+  width: 60vw;
   padding: 5px;
   border: none;
   border-radius: 5px;
@@ -18,14 +17,16 @@ const Input = styled.input`
   ${({ quantity }) =>
     quantity &&
     css`
-      /* width: 10.5rem; */
-      /* height: 4.4rem; */
       border: 1px solid ${({ theme }) => theme.black};
     `}
 
   :focus {
     outline: none;
     border-bottom: solid 5px ${({ theme }) => theme.purple};
+  }
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.s}) {
+    width: 30rem;
   }
 `;
 

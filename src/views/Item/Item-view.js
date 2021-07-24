@@ -4,7 +4,6 @@ import getItems from 'composables/getItems';
 import NavbarTemplate from 'templates/Navbar/Navbar-template';
 import ItemDetails from 'components/organisms/ItemDetails/ItemDetails-component';
 import Heading from 'components/atoms/Heading/Heading';
-import { StyledInnerWrap } from './Item-styles';
 
 const Item = () => {
   const params = useParams();
@@ -17,7 +16,7 @@ const Item = () => {
   return (
     <NavbarTemplate>
       {data ? (
-        <StyledInnerWrap>
+        <div>
           <ItemDetails
             id={data.id}
             image={data.image}
@@ -25,7 +24,7 @@ const Item = () => {
             name={data.title}
             about={data.description}
           />
-        </StyledInnerWrap>
+        </div>
       ) : !error ? (
         <Heading>Loading...</Heading>
       ) : (
