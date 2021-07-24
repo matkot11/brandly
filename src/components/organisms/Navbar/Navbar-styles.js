@@ -28,11 +28,19 @@ export const StyledInnerWrapper = styled.div`
 
 export const StyledButtonsWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 
   & > * {
-    margin: 0 1rem;
+    margin: 0.5rem 0;
+  }
+
+  @media only screen and (min-width: ${({ theme }) => theme.size.m}) {
+    flex-direction: row;
+
+    & > * {
+      margin: 0 1rem;
+    }
   }
 `;
 

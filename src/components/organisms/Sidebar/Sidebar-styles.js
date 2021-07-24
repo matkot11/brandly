@@ -13,6 +13,7 @@ export const StyledInnerWrapper = styled.div`
   grid-row: 2;
   align-self: center;
   justify-self: center;
+  text-align: center;
 `;
 
 export const StyledHeading = styled(Heading)`
